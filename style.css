@@ -268,6 +268,16 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
   width: 31%;
 }
 
+.flex-row-quarter {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+  }
+  
+  .flex-row-quarter .col {
+	width: 20%;
+  }
+
 .flex-row-gallery {
 	display: flex;	
 	justify-content: space-between;
