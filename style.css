@@ -545,8 +545,14 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	--goodtech-gray: #e1dddb;
 }
 
-.om-oss{
+.rapporter{
 	background: white;
+	margin-top: 5%;
+}
+
+.om-oss{
+	background: var(--goodtech-dark-gray);
+	color: white;
 	margin-top: 5%;
 }
 
