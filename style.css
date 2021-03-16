@@ -110,11 +110,11 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 }
 
 .nav-language a:hover {
-	color: rgb(211,247,209);
+	color: var(--goodtech-orange);
 }
 
 .nav-language a:active {
-	color: rgb(158,185,157);
+	color: var(--goodtech-orange);
 }
 
 .nav span {
@@ -468,7 +468,7 @@ h3 {
 
 .text-ingress {
 	font-size: 120%;
-	color: #333333;
+	color: var(--goodtech-dark-gray);
 	line-height: 1.8;
 }
 
@@ -542,6 +542,13 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 
 */
 
+:root {
+	--goodtech-orange: #ef6822;
+	--goodtech-dark-gray: #46443f;
+	--goodtech-light-gray: #e1dddb;
+	--goodtech-gray: #e1dddb;
+}
+
 .burgundy-bg {
 	background-color: rgba(46, 21, 27, 0.1);
 }
@@ -561,6 +568,11 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 .pink-bg {
 	background: rgb(211,247,209);
 }
+
+.goodtech-orange-bg{
+	background: var(--goodtech-orange);
+}
+	
 
 .link {
 	color: blue;
