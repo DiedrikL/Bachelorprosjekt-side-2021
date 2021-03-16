@@ -526,6 +526,12 @@ h3 {
 	padding-top: 40px ;
 }
 
+.footnote {
+    font-size: 70%;
+    font-style: italic;
+}
+
+
 /* Fargereferanse
 
 Mørkeblå:		#2f4445	\	rgb(47, 68, 85)
@@ -635,87 +641,6 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	display: block;
 }
 /** slutt popup **/
-
-/****bildekarusell*/
-.size400{
-	min-height: 400px;	
-	max-height: 90vh;
-	padding-top: 40%;
-}
-
-.picture-gallery {
-	position: relative;
-	overflow: hidden;
-}
-
-.picture-gallery-picture{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	left: 100%;
-	bottom: 0;
-	z-index: 0;
-	object-fit: contain;
-}
-
-.picture-left.picture-left{
-	left: -100%;
-}
-
-.picture-display-right{
-	transform: translateX(-100%);
-	transition: transform 1s ease;
-	z-index: 2;
-}
-
-.picture-display-left{
-	transform: translateX(100%);
-	transition: transform 1s ease;
-	z-index: 2;
-}
-
-.picture-fade {
-	z-index: 1;
-	left: 0;
-	right: 0;
-}
-
-.picture-gallery-button {
-	padding: 10px;
-	text-align: center;
-	font-size: 50px;
-	line-height: 1;
-	position: absolute;
-	z-index: 3;
-	border: none;
-	cursor: pointer;
-	align-items: center;
-	outline-color: black;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 10%;
-	background: transparent;
-}
-
-.picture-gallery-button:hover {
-	background: rgba(0,0,0,0.3);
-}
-
-#previousPicture {
-	left: 10px;
-}
-
-#nextPicture {
-	right: 10px;
-}
-
-.replacement-size-400 {
-	min-height: 400px;
-	height: 70vh;
-	object-fit: contain;
-}
-
-/****bildekarusell*/
 
 /****footer****/
 footer {
