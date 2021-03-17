@@ -12,6 +12,10 @@ body, h1, h2, h3, h4, p, ol, ul {
 	font-family: 'Roboto', sans-serif;
 }
 
+body{
+	background-color: var(--goodtech-light-gray	)
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -51,7 +55,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	width: 100%;
 	height: 50px;
 	align-items: center;
-	background: rgba(49 ,71 ,88 ,0.95);
+	background: var(--goodtech-blue-gray);
 	z-index: 10;
 }
 
@@ -83,7 +87,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 }
 
 .topnav-ul li a:hover {
-	color: rgb(211,247,209);
+	color: var(--goodtech-orange);
 	transition: ease 0.2s;
 	/*border-bottom: 1px solid #C9C1C2;*/
 }
@@ -107,14 +111,6 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 .nav-language {
 	color: #ffffff;
 	font-size: 90%;
-}
-
-.nav-language a:hover {
-	color: rgb(211,247,209);
-}
-
-.nav-language a:active {
-	color: rgb(158,185,157);
 }
 
 .nav span {
@@ -438,7 +434,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 /*****body*****/
 
 h1 {
-	font-size: 260%;
+	font-size: 300%;
 	font-weight: 700;
     font-family: 'Roboto Slab', serif;
 	letter-spacing: 2px;
@@ -448,9 +444,10 @@ h2 {
 	font-size: 200%;
 	margin-top: 15px;
     margin-bottom: 10px;
-   	font-weight: 700;
+   	font-weight: 300;
     font-family: 'Roboto Slab', serif;
 	letter-spacing: 1px;
+	font-style: italic;
 }
 
 h3 {
@@ -468,7 +465,7 @@ h3 {
 
 .text-ingress {
 	font-size: 120%;
-	color: #333333;
+	color: white;
 	line-height: 1.8;
 }
 
@@ -526,6 +523,12 @@ h3 {
 	padding-top: 40px ;
 }
 
+.footnote {
+    font-size: 70%;
+    font-style: italic;
+}
+
+
 /* Fargereferanse
 
 Mørkeblå:		#2f4445	\	rgb(47, 68, 85)
@@ -535,6 +538,26 @@ Turkis: 		#376e6f	\	rgb(55, 110, 111)
 Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 
 */
+
+/* Fargevariabler */
+:root {
+	--goodtech-orange: #ef6822;
+	--goodtech-dark-gray: #46443f;
+	--goodtech-light-gray: #e1dddb;
+	--goodtech-gray: #e1dddb;
+	--goodtech-blue-gray: #4d5e7a;
+}
+
+.rapporter{
+	background: white;
+	margin-top: 5%;
+}
+
+.om-oss{
+	background: var(--goodtech-dark-gray);
+	color: white;
+	margin-top: 5%;
+}
 
 .burgundy-bg {
 	background-color: rgba(46, 21, 27, 0.1);
@@ -548,13 +571,30 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	background-color: rgba(28, 51, 52, 0.1);
 }
 
+.white-bg {
+	background-color: white;
+}
+
 .header-bg {
-	background: rgb(47 ,68 ,85);
+	background:color rgb(47 ,68 ,85);
 }
 
 .pink-bg {
-	background: rgb(211,247,209);
+	background-color: rgb(211,247,209);
 }
+
+.white-text{
+	color: white;
+}
+
+.goodtech-orange-bg{
+	background-color: var(--goodtech-orange);
+}
+
+.goodtech-gray-bg{
+	background-color: var(--goodtech-blue-gray);
+}
+	
 
 .link {
 	color: blue;
@@ -567,6 +607,11 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 
 .icons {
 	width: 60px;
+	margin: 10px;
+}
+
+.report {
+	filter: hue-rotate(180deg);
 }
 
 .flex-one {
@@ -636,87 +681,6 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 }
 /** slutt popup **/
 
-/****bildekarusell*/
-.size400{
-	min-height: 400px;	
-	max-height: 90vh;
-	padding-top: 40%;
-}
-
-.picture-gallery {
-	position: relative;
-	overflow: hidden;
-}
-
-.picture-gallery-picture{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	left: 100%;
-	bottom: 0;
-	z-index: 0;
-	object-fit: contain;
-}
-
-.picture-left.picture-left{
-	left: -100%;
-}
-
-.picture-display-right{
-	transform: translateX(-100%);
-	transition: transform 1s ease;
-	z-index: 2;
-}
-
-.picture-display-left{
-	transform: translateX(100%);
-	transition: transform 1s ease;
-	z-index: 2;
-}
-
-.picture-fade {
-	z-index: 1;
-	left: 0;
-	right: 0;
-}
-
-.picture-gallery-button {
-	padding: 10px;
-	text-align: center;
-	font-size: 50px;
-	line-height: 1;
-	position: absolute;
-	z-index: 3;
-	border: none;
-	cursor: pointer;
-	align-items: center;
-	outline-color: black;
-	top: 50%;
-	transform: translateY(-50%);
-	border-radius: 10%;
-	background: transparent;
-}
-
-.picture-gallery-button:hover {
-	background: rgba(0,0,0,0.3);
-}
-
-#previousPicture {
-	left: 10px;
-}
-
-#nextPicture {
-	right: 10px;
-}
-
-.replacement-size-400 {
-	min-height: 400px;
-	height: 70vh;
-	object-fit: contain;
-}
-
-/****bildekarusell*/
-
 /****footer****/
 footer {
 	background: rgb(47, 68, 85);
@@ -733,7 +697,7 @@ footer {
 }
 
 footer a:hover {
-	color: rgb(211,247,209);
+	color: var(--goodtech-orange);
 }
 
 footer .flex-row-thirds {
