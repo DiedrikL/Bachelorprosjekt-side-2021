@@ -13,7 +13,7 @@ body, h1, h2, h3, h4, p, ol, ul {
 }
 
 body{
-	background: var(--goodtech-light-gray);
+	background-color: var(--goodtech-light-gray	)
 }
 
 ol, ul {
@@ -434,7 +434,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 /*****body*****/
 
 h1 {
-	font-size: 260%;
+	font-size: 300%;
 	font-weight: 700;
     font-family: 'Roboto Slab', serif;
 	letter-spacing: 2px;
@@ -444,9 +444,10 @@ h2 {
 	font-size: 200%;
 	margin-top: 15px;
     margin-bottom: 10px;
-   	font-weight: 700;
+   	font-weight: 300;
     font-family: 'Roboto Slab', serif;
 	letter-spacing: 1px;
+	font-style: italic;
 }
 
 h3 {
@@ -464,7 +465,7 @@ h3 {
 
 .text-ingress {
 	font-size: 120%;
-	color: var(--goodtech-dark-gray);
+	color: white;
 	line-height: 1.8;
 }
 
@@ -538,6 +539,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 
 */
 
+/* Fargevariabler */
 :root {
 	--goodtech-orange: #ef6822;
 	--goodtech-dark-gray: #46443f;
@@ -569,20 +571,28 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	background-color: rgba(28, 51, 52, 0.1);
 }
 
+.white-bg {
+	background-color: white;
+}
+
 .header-bg {
-	background: rgb(47 ,68 ,85);
+	background:color rgb(47 ,68 ,85);
 }
 
 .pink-bg {
-	background: rgb(211,247,209);
+	background-color: rgb(211,247,209);
+}
+
+.white-text{
+	color: white;
 }
 
 .goodtech-orange-bg{
-	background: var(--goodtech-orange);
+	background-color: var(--goodtech-orange);
 }
 
 .goodtech-gray-bg{
-	background: var(--goodtech-blue-gray);
+	background-color: var(--goodtech-blue-gray);
 }
 	
 
@@ -687,7 +697,7 @@ footer {
 }
 
 footer a:hover {
-	color: rgb(211,247,209);
+	color: var(--goodtech-orange);
 }
 
 footer .flex-row-thirds {
