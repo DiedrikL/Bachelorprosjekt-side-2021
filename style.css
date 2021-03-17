@@ -55,7 +55,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	width: 100%;
 	height: 50px;
 	align-items: center;
-	background: var(--goodtech-dark-gray);
+	background: var(--goodtech-blue-gray);
 	z-index: 10;
 }
 
@@ -543,6 +543,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 	--goodtech-dark-gray: #46443f;
 	--goodtech-light-gray: #e1dddb;
 	--goodtech-gray: #e1dddb;
+	--goodtech-blue-gray: #4d5e7a;
 }
 
 .rapporter{
@@ -581,7 +582,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 }
 
 .goodtech-gray-bg{
-	background: var(--goodtech-gray);
+	background: var(--goodtech-blue-gray);
 }
 	
 
@@ -596,6 +597,7 @@ Mørkegrønn: 	#1c3334	\	rgb(28, 51, 52)
 
 .icons {
 	width: 60px;
+	margin: 10px;
 }
 
 .report {
